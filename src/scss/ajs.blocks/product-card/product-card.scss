@@ -1,0 +1,14 @@
+@import "../../definitions";
+
+.product-card {
+  border: 1px solid $color-light-gray;
+}
+
+.product-card__image {
+  width: 100%;
+}
+
+.product-card__orders-count {
+  margin-top: auto;
+  margin-bottom: auto;
+}

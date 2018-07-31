@@ -1,0 +1,37 @@
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./definitions";
+@import "./ajs.blocks/stars/stars";
+@import "./ajs.blocks/block-icon/block-icon";
+@import "./ajs.blocks/block-left-right/block-left-right";
+@import "./ajs.blocks/header/header";
+@import "./ajs.blocks/breadcrumbs/breadcrumbs";
+@import "./ajs.blocks/product-card/product-card";
+@import "./ajs.blocks/bookmarks/bookmarks";
+@import "./ajs.blocks/button/button";
+@import "./ajs.blocks/input/input";
+@import "./ajs.blocks/text/text";
+@import "./ajs.blocks/product-page/product-page";
+@import "./ajs.blocks/cart-page/cart-page";
+@import "./ajs.blocks/cart-group/cart-group";
+
+@include media-only-desktop {
+  html {
+    font-size: 14px;
+  }
+}
+
+@include media-only-mobile {
+  html {
+    font-size: 14px;
+  }
+}
+
+// Переопределения
+h1, .h1, h2, .h2 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 960px !important;
+}

@@ -1,0 +1,10 @@
+.block-icon {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+}
+
+.block-icon_point {
+  background-image: url('/svg/point-green.svg'), url('/ajsspa/dist/svg/point-green.svg');
+  background-size: auto 100%;
+}

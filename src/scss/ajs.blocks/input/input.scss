@@ -1,0 +1,12 @@
+@import "../../definitions";
+
+.input {
+  @extend .form-control;
+  @extend .form-control-sm;
+
+  display: inline-block;
+}
+
+.input_50 {
+  width: 50px;
+}

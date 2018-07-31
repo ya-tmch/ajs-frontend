@@ -1,0 +1,46 @@
+//
+// В этом файле никаких определений классов! Только переменные, миксины и т.д.
+
+// Breakpoints
+$xs-breakpoint: 0;
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xs-breakpoint: 1200px;
+
+// Main colors
+$color-white: #fff;
+$color-yellow: #ffc107;
+$color-green: #11732e;
+$color-red: #dc3545;
+$color-dark: #343a40;
+$color-secondary: #6c757d;
+$color-gray: #adadad;
+$color-light-gray: #eaeaea;
+
+// Font sizes
+$xs-font-size: 0.6rem;
+$sm-font-size: 0.8rem;
+$md-font-size: 1rem;
+$lg-font-size: 1.2rem;
+$xl-font-size: 1.4rem;
+
+// rem sizes
+$size-5: 3rem;
+$size-4: 1.5rem;
+$size-3: 1rem;
+$size-2: 0.5rem;
+$size-1: 0.25rem;
+
+// Media
+@mixin media-only-mobile {
+  @media (max-width: $md-breakpoint) {
+    @content;
+  }
+}
+
+@mixin media-only-desktop {
+  @media (min-width: $md-breakpoint) {
+    @content;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../definitions";
+
+.cart-group {
+  margin: $size-4 0;
+}
+
+.cart-group__header {
+  margin: $size-2 0;
+  border-top: 1px solid $color-gray;
+  border-bottom: 1px solid $color-gray;
+  display: grid;
+  grid-template-columns: 100px auto 120px 120px 120px;
+
+  @include media-only-mobile {
+    display: none;
+  }
+}
+
+.cart-group__header > div {
+  background-color: $color-light-gray;
+  padding: 10px;
+}
+
+.cart-group__container {
+  margin: $size-2 0;
+  @include media-only-desktop {
+    display: grid;
+    grid-template-columns: 100px auto 120px 120px 120px;
+  }
+}
+
+.cart-group__stock-info {
+  padding-bottom: $size-4;
+}
+
+.cart-group__content {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.cart-group__items-wrapper {
+  border-left: 1px solid $color-light-gray;
+  padding-left: $size-2;
+}
+
+@import './cart-group__item';
+@import './cart-group__footer';

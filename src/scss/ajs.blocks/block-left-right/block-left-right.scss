@@ -1,0 +1,14 @@
+@import "../../definitions";
+
+// Блок лево право
+.block-left-right {
+  @include media-only-desktop {
+      display: flex;
+      justify-content: space-between;
+  }
+}
+
+.block-left-right_no-mobile {
+  display: flex;
+  justify-content: space-between;
+}

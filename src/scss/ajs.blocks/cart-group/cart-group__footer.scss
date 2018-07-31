@@ -1,0 +1,29 @@
+@import "../../definitions";
+
+.cart-group__footer {
+  padding-top: $size-2;
+  text-align: right;
+
+  @include media-only-desktop {
+    border-top: 1px solid $color-light-gray;
+  }
+}
+
+.cart-group__footer-total-and-price {
+  display: inline-block;
+
+  @include media-only-mobile {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    margin: 10px 0;
+  }
+}
+
+.cart-group__footer-total, .cart-group__footer-price {
+  display: inline-block;
+
+  @include media-only-desktop {
+    margin-right: 20px;
+  }
+}

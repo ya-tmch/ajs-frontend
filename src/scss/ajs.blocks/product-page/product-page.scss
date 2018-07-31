@@ -1,0 +1,70 @@
+@import "../../definitions";
+
+.product-page {
+
+}
+
+.product-page__hr {
+  border-top: 1px solid $color-light-gray;
+
+  &.product-page__hr_bold {
+    border-top: 2px solid $color-light-gray;
+  }
+}
+
+.product-page__big-image {
+  width: 100%;
+  border: 1px solid $color-light-gray;
+}
+
+.product-page__small-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  margin: 0 $size-2 $size-2 0;
+  border: 1px solid $color-light-gray;
+
+  &.product-page__small-image_active {
+    border: 2px solid $color-green;
+  }
+
+  @include media-only-mobile {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.product-page__stock {
+
+  .product-page__stock-info {
+    border: 1px solid $color-light-gray;
+    display: inline-block;
+  }
+
+  &.product-page__stock_active {
+
+    .product-page__stock-info {
+      border: 2px solid $color-green;
+    }
+  }
+}
+
+.product-page__properties {
+  margin-top: $size-3;
+  display: grid;
+  grid-template-columns: 100px auto;
+
+  & > *:first-child {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.product-page__option {
+  display: inline-block;
+  border: 1px solid $color-light-gray;
+
+  &.product-page__option_active {
+    border: 2px solid $color-green;
+  }
+}

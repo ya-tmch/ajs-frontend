@@ -1,0 +1,40 @@
+@import "../../definitions";
+
+.bookmarks__menu-item {
+  display: inline-block;
+  background-color: $color-light-gray;
+  border: 1px solid $color-gray;
+  border-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: -1px; // чтобы границы соседних ячеек "сколапсировались"
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .bookmarks__menu-item-inner {
+    padding: $size-2 $size-3;
+    border-bottom: 1px solid $color-gray;
+    cursor: pointer;
+  }
+
+  &.bookmarks__menu-item_active {
+    background-color: $color-white;
+
+    .bookmarks__menu-item-inner {
+      border-bottom: 1px solid $color-white;
+    }
+  }
+
+  @include media-only-mobile {
+    display: block;
+    margin-left: 0;
+    margin-top: -3px;
+  }
+}
+
+.bookmarks__content {
+  margin-top: -1px;
+  border: 1px solid $color-gray;
+}
