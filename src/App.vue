@@ -1,7 +1,7 @@
 <template>
     <div>
         <header class="header p-4">
-            <p style="color: white">Тут будет новая шапка</p>
+            <p style="color: white">Тут будет новая шапка3</p>
             <a href="#/cart" class="btn btn-light mr-2">Корзина</a>
             <a href="#/product" class="btn btn-light">Продукт</a>
         </header>
